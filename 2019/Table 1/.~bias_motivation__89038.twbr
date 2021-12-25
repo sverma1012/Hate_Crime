@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.1214.2200                               -->
+<workbook source-build='2021.1.9 (20211.21.1214.2200)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='religion' inline='true' name='federated.1wjn10x1khxbhh154b3mw1pr07gx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='religion' name='textscan.17jae241azrtum13egat30v5d58e'>
+            <connection class='textscan' directory='/Users/sneha_verma/Documents/GitHub/Hate_Crime/Table 1' filename='religion.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.17jae241azrtum13egat30v5d58e' name='religion.csv' table='[religion#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Religion' ordinal='0' />
+            <column datatype='integer' name='Incidents' ordinal='1' />
+            <column datatype='integer' name='Offenses' ordinal='2' />
+            <column datatype='integer' name='Victims' ordinal='3' />
+            <column datatype='integer' name='Known_Offenders' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.17jae241azrtum13egat30v5d58e' name='religion.csv' table='[religion#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Religion' ordinal='0' />
+            <column datatype='integer' name='Incidents' ordinal='1' />
+            <column datatype='integer' name='Offenses' ordinal='2' />
+            <column datatype='integer' name='Victims' ordinal='3' />
+            <column datatype='integer' name='Known_Offenders' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[religion.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Religion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Religion]</local-name>
+            <parent-name>[religion.csv]</parent-name>
+            <remote-alias>Religion</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[religion.csv_1FF9220B3B694C69BD3F3F34C28935B8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Incidents]</local-name>
+            <parent-name>[religion.csv]</parent-name>
+            <remote-alias>Incidents</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[religion.csv_1FF9220B3B694C69BD3F3F34C28935B8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offenses]</local-name>
+            <parent-name>[religion.csv]</parent-name>
+            <remote-alias>Offenses</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[religion.csv_1FF9220B3B694C69BD3F3F34C28935B8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims]</local-name>
+            <parent-name>[religion.csv]</parent-name>
+            <remote-alias>Victims</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[religion.csv_1FF9220B3B694C69BD3F3F34C28935B8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Known_Offenders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Known_Offenders]</local-name>
+            <parent-name>[religion.csv]</parent-name>
+            <remote-alias>Known_Offenders</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[religion.csv_1FF9220B3B694C69BD3F3F34C28935B8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Known Offenders' datatype='integer' name='[Known_Offenders]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='religion.csv' datatype='table' name='[__tableau_internal_object_id__].[religion.csv_1FF9220B3B694C69BD3F3F34C28935B8]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='religion.csv' id='religion.csv_1FF9220B3B694C69BD3F3F34C28935B8'>
+            <properties context=''>
+              <relation connection='textscan.17jae241azrtum13egat30v5d58e' name='religion.csv' table='[religion#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Religion' ordinal='0' />
+                  <column datatype='integer' name='Incidents' ordinal='1' />
+                  <column datatype='integer' name='Offenses' ordinal='2' />
+                  <column datatype='integer' name='Victims' ordinal='3' />
+                  <column datatype='integer' name='Known_Offenders' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='race' inline='true' name='federated.08zudly07q0mrt15dpwcy0o8b7z0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='race' name='textscan.1t1l7hd1xbeai61fj1k2816mtbmz'>
+            <connection class='textscan' directory='/Users/sneha_verma/Documents/GitHub/Hate_Crime/Table 1' filename='race.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1t1l7hd1xbeai61fj1k2816mtbmz' name='race.csv' table='[race#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Race' ordinal='0' />
+            <column datatype='integer' name='Incidents' ordinal='1' />
+            <column datatype='integer' name='Offenses' ordinal='2' />
+            <column datatype='integer' name='Victims' ordinal='3' />
+            <column datatype='integer' name='Known_Offenders' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1t1l7hd1xbeai61fj1k2816mtbmz' name='race.csv' table='[race#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Race' ordinal='0' />
+            <column datatype='integer' name='Incidents' ordinal='1' />
+            <column datatype='integer' name='Offenses' ordinal='2' />
+            <column datatype='integer' name='Victims' ordinal='3' />
+            <column datatype='integer' name='Known_Offenders' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[race.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[race.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[race.csv_919B70F9A0C04FAEB7EC39DCEE189EDC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incidents</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Incidents]</local-name>
+            <parent-name>[race.csv]</parent-name>
+            <remote-alias>Incidents</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[race.csv_919B70F9A0C04FAEB7EC39DCEE189EDC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offenses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offenses]</local-name>
+            <parent-name>[race.csv]</parent-name>
+            <remote-alias>Offenses</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[race.csv_919B70F9A0C04FAEB7EC39DCEE189EDC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims]</local-name>
+            <parent-name>[race.csv]</parent-name>
+            <remote-alias>Victims</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[race.csv_919B70F9A0C04FAEB7EC39DCEE189EDC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Known_Offenders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Known_Offenders]</local-name>
+            <parent-name>[race.csv]</parent-name>
+            <remote-alias>Known_Offenders</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[race.csv_919B70F9A0C04FAEB7EC39DCEE189EDC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Known Offenders' datatype='integer' name='[Known_Offenders]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Race (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Race]' new-bin='true'>
+          <bin default-name='false' value='&quot;Multiple or Other Races&quot;'>
+            <value>&quot;Anti-Multiple Races, Group&quot;</value>
+            <value>&quot;Anti-Other Race/Ethnicity/Ancestry&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='race.csv' datatype='table' name='[__tableau_internal_object_id__].[race.csv_919B70F9A0C04FAEB7EC39DCEE189EDC]' role='measure' type='quantitative' />
+      <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Race:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Anti-White&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Anti-Black or African American&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Single Bias Incidents&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Anti-Asian&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Anti-Arab&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Anti-Hispanic or Latino&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Anti-Native Hawaiian or Other Pacific Islander&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Total&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Anti-Other Race/Ethnicity/Ancestry&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Anti-Multiple Races, Group&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Anti-American Indian or Alaska Native&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Race (group)]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Anti-White&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Anti-Black or African American&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Single Bias Incidents&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Anti-Asian&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Anti-Arab&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Anti-Hispanic or Latino&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Anti-Native Hawaiian or Other Pacific Islander&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Total&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Anti-Other Race/Ethnicity/Ancestry&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Anti-Multiple Races, Group&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Multiple or Other Races&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Anti-American Indian or Alaska Native&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='race.csv' id='race.csv_919B70F9A0C04FAEB7EC39DCEE189EDC'>
+            <properties context=''>
+              <relation connection='textscan.1t1l7hd1xbeai61fj1k2816mtbmz' name='race.csv' table='[race#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Race' ordinal='0' />
+                  <column datatype='integer' name='Incidents' ordinal='1' />
+                  <column datatype='integer' name='Offenses' ordinal='2' />
+                  <column datatype='integer' name='Victims' ordinal='3' />
+                  <column datatype='integer' name='Known_Offenders' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Racial Bias'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='race' name='federated.08zudly07q0mrt15dpwcy0o8b7z0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08zudly07q0mrt15dpwcy0o8b7z0'>
+            <column datatype='string' name='[Race (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Race]' new-bin='true'>
+                <bin default-name='false' value='&quot;Multiple or Other Races&quot;'>
+                  <value>&quot;Anti-Multiple Races, Group&quot;</value>
+                  <value>&quot;Anti-Other Race/Ethnicity/Ancestry&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Race]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Victims]' role='measure' type='quantitative' />
+            <column-instance column='[Race]' derivation='None' name='[none:Race:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Victims]' derivation='Sum' name='[pcto:sum:Victims:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.08zudly07q0mrt15dpwcy0o8b7z0].[Race (group)]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08zudly07q0mrt15dpwcy0o8b7z0].[none:Race:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Race:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Race:nk]' member='&quot;Single Bias Incidents&quot;' />
+                <groupfilter function='member' level='[none:Race:nk]' member='&quot;Total&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.08zudly07q0mrt15dpwcy0o8b7z0].[none:Race:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.08zudly07q0mrt15dpwcy0o8b7z0].[pcto:sum:Victims:qk:1]' min='0.0' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#e5e5e5</color>
+                <color>#d4d4e7</color>
+                <color>#c4c4e9</color>
+                <color>#b3b3ec</color>
+                <color>#a1a1ee</color>
+                <color>#8f8ff1</color>
+                <color>#7d7df3</color>
+                <color>#6b6bf5</color>
+                <color>#5858f8</color>
+                <color>#4444fa</color>
+                <color>#3131fd</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.08zudly07q0mrt15dpwcy0o8b7z0].[pcto:sum:Victims:qk:1]' />
+              <color column='[federated.08zudly07q0mrt15dpwcy0o8b7z0].[pcto:sum:Victims:qk:1]' />
+              <text column='[federated.08zudly07q0mrt15dpwcy0o8b7z0].[Race (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6B3F9636-1B14-4824-B457-A4A017B3F3AD}' />
+    </worksheet>
+    <worksheet name='Religious Bias'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='religion' name='federated.1wjn10x1khxbhh154b3mw1pr07gx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wjn10x1khxbhh154b3mw1pr07gx'>
+            <column datatype='string' name='[Religion]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Victims]' role='measure' type='quantitative' />
+            <column-instance column='[Religion]' derivation='None' name='[none:Religion:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Victims]' derivation='Sum' name='[pcto:sum:Victims:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wjn10x1khxbhh154b3mw1pr07gx].[none:Religion:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Religion:nk]' />
+              <groupfilter function='member' level='[none:Religion:nk]' member='&quot;Total&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1wjn10x1khxbhh154b3mw1pr07gx].[none:Religion:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='597' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1wjn10x1khxbhh154b3mw1pr07gx].[pcto:sum:Victims:qk:3]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1wjn10x1khxbhh154b3mw1pr07gx].[pcto:sum:Victims:qk:3]' />
+              <text column='[federated.1wjn10x1khxbhh154b3mw1pr07gx].[none:Religion:nk]' />
+              <color column='[federated.1wjn10x1khxbhh154b3mw1pr07gx].[none:Religion:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{13A4BCF1-B3A8-4A5D-B3BE-8723DEB1930A}' />
+    </worksheet>
+    <worksheet name='Sexual Orientation Bias'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{23ADCE26-6199-47CB-8CFD-BC2616D4688F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Racial Bias'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{520E26CB-462B-464E-8986-59ACDC1FC176}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Religious Bias'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.1wjn10x1khxbhh154b3mw1pr07gx].[none:Religion:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F968AC49-514D-4248-BE14-FC31563C48D3}' />
+    </window>
+    <window class='worksheet' name='Sexual Orientation Bias'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07FB8F37-9764-452C-A592-3EAAEE684C4F}' />
+    </window>
+  </windows>
+</workbook>
